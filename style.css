@@ -2,9 +2,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Tahoma", sans-serif;
-
-  background-image: url("images/simp.jpeg"); /* Set the background image for the container */
+  font-family: "PT Serif", sans-serif;
+  background-image: url("images/pawel-czerwinski-UBVwe1goozI-unsplash.jpg"); /* Set the background image for the container */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -20,7 +19,7 @@ body {
 /* Set up header */
 .header {
   opacity: 0.95;
-  background-image: url("images/seattle.jpeg");
+  background-image: url("images/sunira-moses-DBTbXJczl48-unsplash.jpg");
   background-size: 100% 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -38,7 +37,7 @@ body {
 .nav-tabs {
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   z-index: 1;
 }
 
@@ -79,7 +78,7 @@ body {
 .photo img {
   width: 250px; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
-  border-radius: 10%; /* Creates a circular image */
+  border-radius: 5%; /* Creates a circular image */
   margin: 0 auto; /* Center the image vertically */
 }
 
@@ -87,18 +86,31 @@ body {
 .project-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Add space between the projects */
+  justify-content: center; /* Add space between the projects */
 }
 
 .project {
-  width: 50%; /* Set the width to create a two-column layout */
+  flex:0 0 250px;
+  background-color: white;
+  background-size: 2%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  flex-basis: 250px;
+  flex-shrink: 0;
+  width: 40%; /* Set the width to create a two-column layout */
   margin-bottom: 20px; /* Add space between rows */
   text-align: center; /* Center the content horizontally */
-  
+  position: relative;
 }
 
 .project img {
-  max-width: 40%;
+  max-width: 100%;
+  max-height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
   display: block; /* Remove extra space below the image */
   margin: 0 auto; /* Center the image horizontally */
 }
@@ -140,4 +152,21 @@ body {
 .h1header {
   text-align: center;
   margin-bottom: 50px;
+}
+
+.spacing {
+  margin: 20px;
+}
+.title {
+  text-align: center;
+}
+
+.intro {
+  opacity: 95%;
+  padding: 15px;
+  border: 2px double #000;
+}
+
+h2 {
+padding: 15px;
 }

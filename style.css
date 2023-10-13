@@ -19,14 +19,13 @@ body {
 /* Set up header */
 .header {
   opacity: 0.95;
-  background-image: url("images/sunira-moses-DBTbXJczl48-unsplash.jpg");
   background-size: 100% 100%;
   width: 100%;
   background-repeat: no-repeat;
   min-height: 100px;
   height: auto;
   padding: 70px;
-  background-color: rgb(14, 14, 51);
+  background-color: rgba(14, 14, 51, 0.816);
   color: #fff;
   text-align: center;
   background-position: center top;

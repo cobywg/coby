@@ -21,15 +21,10 @@ body {
   opacity: 0.95;
   background-size: 100% 100%;
   width: 100%;
-  background-repeat: no-repeat;
-  min-height: 100px;
   height: auto;
   padding: 70px;
-  background-color: rgba(14, 14, 51, 0.816);
-  color: #fff;
-  text-align: center;
-  background-position: center top;
-  position: relative; /* Add this property for stacking context */
+  background-color: rgba(166, 87, 30, 0.81);
+  color: #fff; /* Add this property for stacking context */
 }
 
 /* Set up navigation tabs */
@@ -44,7 +39,6 @@ body {
   padding: 10px 20px;
   color: white;
   text-decoration: none;
-  margin-right: 10px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   font-weight: bold;
 }
@@ -70,19 +64,28 @@ body {
   height: auto;
 }
 
-.photo {
-  text-align: center; /* Center the image horizontally */
+.photo img {
+  text-align: center;
+  border-radius: 50%; /* Create a circle */
+  overflow: hidden;
+  width: 200px; /* Increase the width */
+  height: 200px; /* Increase the height */
+  object-fit: cover;
+  border: 4px solid #fff; /* Increase the border thickness */
+}
+.photo { /* Ensure it's a perfect square to create a circle */
+  text-align: center;
+  border-radius: 50%; /* Create a circle */
+  overflow: hidden;
 }
 
-.photo img {
-  width: 250px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 5%; /* Creates a circular image */
-  margin: 0 auto; /* Center the image vertically */
-}
+
+
+
 
 
 .project-grid {
+  padding-top: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Add space between the projects */
@@ -163,9 +166,74 @@ body {
 .intro {
   opacity: 95%;
   padding: 15px;
-  border: 2px double #000;
 }
 
 h2 {
-padding: 15px;
+  padding: 10px;
+  }
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+
+}
+
+.transition {
+  animation: fade-in ms; /* Use the animation with a duration of 1.5 seconds */
+}
+
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgb(8, 5, 5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 5s;
+  animation: fadeOut 4s cubic-bezier(0.42, 0, 0.58, 1);
+
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px; /* Adjust the desired width */
+  height: 80px; /* Adjust the desired height */ /* Background color if necessary */
+}
+.loader img {
+    width: 10x; /* Adjust the logo width */
+    height: 10px; /* Adjust the logo height */
+  }
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.fa-brands {
+  font-size: 30px;
+  color: black ;
+
+}
+
+footer {
+  font-size: 20px;
+  padding: 20px;
 }

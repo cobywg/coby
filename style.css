@@ -192,7 +192,7 @@ h2 {
 }
 
 .transition {
-  animation: fade-in ms; /* Use the animation with a duration of 1.5 seconds */
+  animation: fade-in  2ms; /* Use the animation with a duration of 1.5 seconds */
 }
 
 .preloader {
@@ -204,7 +204,7 @@ h2 {
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  transition: opacity 5s;
+  transition: opacity 4s;
   animation: fadeOut 4s cubic-bezier(0.42, 0, 0.58, 1);
 
 }
